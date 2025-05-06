@@ -8,6 +8,13 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
+const isPRPreview = process.env.DOCS_PREVIEW === 'true';
+const prNumber = process.env.PR_NUMBER;
+
+const dynamicBaseUrl = isPRPreview && prNumber
+  ? `/pr-preview/pr-${prNumber}/`
+  : '/docs-pr-preview-test/';
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'My Site',
@@ -18,7 +25,7 @@ const config = {
   url: 'https://allhaile.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/docs-pr-preview-test/',
+  baseUrl: dynamicBaseUrl,
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
