@@ -1,9 +1,3 @@
-// @ts-check
-// `@type` JSDoc annotations allow editor autocompletion and type checking
-// (when paired with `@ts-check`).
-// There are various equivalent ways to declare your Docusaurus config.
-// See: https://docusaurus.io/docs/api/docusaurus-config
-
 import {themes as prismThemes} from 'prism-react-renderer';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
@@ -12,12 +6,12 @@ const isPRPreview = process.env.DOCS_PREVIEW === 'true';
 const prNumber = process.env.PR_NUMBER;
 
 const dynamicBaseUrl = isPRPreview && prNumber
-  ? `/pr-preview/pr-${prNumber}/`
+  ? `/docs-pr-preview-test/pr-preview/pr-${prNumber}/`
   : '/docs-pr-preview-test/';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
+  title: 'Haile Test Site',
   tagline: 'Dinosaurs are cool',
   favicon: 'img/favicon.ico',
 
