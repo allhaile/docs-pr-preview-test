@@ -9,6 +9,8 @@ const dynamicBaseUrl = isPRPreview && prNumber
   ? `/docs-pr-preview-test/pr-preview/pr-${prNumber}/`
   : '/docs-pr-preview-test/';
 
+  console.log('🧪 baseUrl:', dynamicBaseUrl);
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Haile Test Site',
