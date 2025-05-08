@@ -7,7 +7,7 @@
   "slug": "/api-tester",
   "permalink": "/docs-pr-preview-test/docs/api-tester",
   "draft": false,
-  "unlisted": false,
+  "unlisted": true,
   "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/api-tester.md",
   "tags": [],
   "version": "current",
@@ -15,9 +15,5 @@
     "slug": "/api-tester",
     "unlisted": true
   },
-  "sidebar": "tutorialSidebar",
-  "previous": {
-    "title": "Translate your site",
-    "permalink": "/docs-pr-preview-test/docs/tutorial-extras/translate-your-site"
-  }
+  "sidebar": "tutorialSidebar"
 }

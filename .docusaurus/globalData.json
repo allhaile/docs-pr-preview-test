@@ -13,6 +13,7 @@
             {
               "id": "api-tester",
               "path": "/docs-pr-preview-test/docs/api-tester",
+              "unlisted": true,
               "sidebar": "tutorialSidebar"
             },
             {
