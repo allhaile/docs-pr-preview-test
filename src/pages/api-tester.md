@@ -1,6 +1,5 @@
 ---
 slug: /api-tester
-unlisted: true
 ---
 import ApiMethodTester from '@site/src/components/ApiMethodTester';
 
