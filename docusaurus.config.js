@@ -1,16 +1,17 @@
-// @ts-check
-// `@type` JSDoc annotations allow editor autocompletion and type checking
-// (when paired with `@ts-check`).
-// There are various equivalent ways to declare your Docusaurus config.
-// See: https://docusaurus.io/docs/api/docusaurus-config
-
 import {themes as prismThemes} from 'prism-react-renderer';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
+const isPRPreview = process.env.DOCS_PREVIEW === 'true';
+const prNumber = process.env.PR_NUMBER;
+
+const dynamicBaseUrl = isPRPreview && prNumber
+  ? `/docs-pr-preview-test/pr-preview/pr-${prNumber}/`
+  : '/docs-pr-preview-test/';
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
+  title: 'Haile Test Site',
   tagline: 'Dinosaurs are cool',
   favicon: 'img/favicon.ico',
 
@@ -18,7 +19,7 @@ const config = {
   url: 'https://allhaile.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/docs-pr-preview-test/',
+  baseUrl: dynamicBaseUrl,
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.

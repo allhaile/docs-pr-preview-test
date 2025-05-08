@@ -1,0 +1,42 @@
+name: Test deployment + PR Previews
+
+on:
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+  pull-requests: write
+
+jobs:
+  test:
+    name: Test deployment
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          cache: npm
+          cache-dependency-path: package-lock.json
+
+      - name: Install dependencies
+        run: npm install  
+
+      - name: Test build website
+        run: DOCS_PREVIEW=true PR_NUMBER=${{ github.event.pull_request.number }} NODE_OPTIONS="--max-old-space-size=4096" npm run build
+
+
+      - name: Deploy PR Preview
+        uses: rossjrw/pr-preview-action@v1.6.1
+        with:
+          source-dir: ./build
+          preview-branch: gh-pages
+          umbrella-dir: pr-preview
+          comment: true 
