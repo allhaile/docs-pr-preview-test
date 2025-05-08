@@ -4,10 +4,11 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 const isPRPreview = process.env.DOCS_PREVIEW === 'true';
 const prNumber = process.env.PR_NUMBER;
+const repoName = 'docs-pr-preview-test'
 
 const dynamicBaseUrl = isPRPreview && prNumber
-  ? `/docs-pr-preview-test/pr-preview/pr-${prNumber}/`
-  : '/docs-pr-preview-test/';
+  ? `/${repoName}/pr-preview/pr-${prNumber}/`
+  : `/${repoName}/`;
 
   console.log('🧪 baseUrl:', dynamicBaseUrl);
 
