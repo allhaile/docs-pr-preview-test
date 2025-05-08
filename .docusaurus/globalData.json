@@ -11,6 +11,11 @@
           "mainDocId": "intro",
           "docs": [
             {
+              "id": "api-tester",
+              "path": "/docs-pr-preview-test/docs/api-tester",
+              "sidebar": "tutorialSidebar"
+            },
+            {
               "id": "intro",
               "path": "/docs-pr-preview-test/docs/intro",
               "sidebar": "tutorialSidebar"
