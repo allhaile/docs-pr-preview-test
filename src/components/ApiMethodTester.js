@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { Tooltip } from 'react-tooltip';
 
 
 const ApiMethodTester = ({ selectedMethod: initialMethod }) => {
