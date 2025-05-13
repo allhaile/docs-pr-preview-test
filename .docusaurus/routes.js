@@ -114,16 +114,22 @@ export default [
   },
   {
     path: '/docs-pr-preview-test/docs',
-    component: ComponentCreator('/docs-pr-preview-test/docs', 'ddc'),
+    component: ComponentCreator('/docs-pr-preview-test/docs', '6db'),
     routes: [
       {
         path: '/docs-pr-preview-test/docs',
-        component: ComponentCreator('/docs-pr-preview-test/docs', 'd94'),
+        component: ComponentCreator('/docs-pr-preview-test/docs', '01c'),
         routes: [
           {
             path: '/docs-pr-preview-test/docs',
-            component: ComponentCreator('/docs-pr-preview-test/docs', 'ac6'),
+            component: ComponentCreator('/docs-pr-preview-test/docs', '940'),
             routes: [
+              {
+                path: '/docs-pr-preview-test/docs/apitester',
+                component: ComponentCreator('/docs-pr-preview-test/docs/apitester', '692'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
               {
                 path: '/docs-pr-preview-test/docs/category/tutorial---basics',
                 component: ComponentCreator('/docs-pr-preview-test/docs/category/tutorial---basics', 'd32'),
