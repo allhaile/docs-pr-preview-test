@@ -3,6 +3,41 @@ import ComponentCreator from '@docusaurus/ComponentCreator';
 
 export default [
   {
+    path: '/docs-pr-preview-test/__docusaurus/debug',
+    component: ComponentCreator('/docs-pr-preview-test/__docusaurus/debug', '464'),
+    exact: true
+  },
+  {
+    path: '/docs-pr-preview-test/__docusaurus/debug/config',
+    component: ComponentCreator('/docs-pr-preview-test/__docusaurus/debug/config', '8e1'),
+    exact: true
+  },
+  {
+    path: '/docs-pr-preview-test/__docusaurus/debug/content',
+    component: ComponentCreator('/docs-pr-preview-test/__docusaurus/debug/content', 'a7e'),
+    exact: true
+  },
+  {
+    path: '/docs-pr-preview-test/__docusaurus/debug/globalData',
+    component: ComponentCreator('/docs-pr-preview-test/__docusaurus/debug/globalData', 'eb7'),
+    exact: true
+  },
+  {
+    path: '/docs-pr-preview-test/__docusaurus/debug/metadata',
+    component: ComponentCreator('/docs-pr-preview-test/__docusaurus/debug/metadata', 'e34'),
+    exact: true
+  },
+  {
+    path: '/docs-pr-preview-test/__docusaurus/debug/registry',
+    component: ComponentCreator('/docs-pr-preview-test/__docusaurus/debug/registry', '0ef'),
+    exact: true
+  },
+  {
+    path: '/docs-pr-preview-test/__docusaurus/debug/routes',
+    component: ComponentCreator('/docs-pr-preview-test/__docusaurus/debug/routes', '625'),
+    exact: true
+  },
+  {
     path: '/docs-pr-preview-test/blog',
     component: ComponentCreator('/docs-pr-preview-test/blog', '9e6'),
     exact: true
@@ -79,16 +114,22 @@ export default [
   },
   {
     path: '/docs-pr-preview-test/docs',
-    component: ComponentCreator('/docs-pr-preview-test/docs', 'ddc'),
+    component: ComponentCreator('/docs-pr-preview-test/docs', '6db'),
     routes: [
       {
         path: '/docs-pr-preview-test/docs',
-        component: ComponentCreator('/docs-pr-preview-test/docs', 'd94'),
+        component: ComponentCreator('/docs-pr-preview-test/docs', '01c'),
         routes: [
           {
             path: '/docs-pr-preview-test/docs',
-            component: ComponentCreator('/docs-pr-preview-test/docs', 'ac6'),
+            component: ComponentCreator('/docs-pr-preview-test/docs', '940'),
             routes: [
+              {
+                path: '/docs-pr-preview-test/docs/apitester',
+                component: ComponentCreator('/docs-pr-preview-test/docs/apitester', '692'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
               {
                 path: '/docs-pr-preview-test/docs/category/tutorial---basics',
                 component: ComponentCreator('/docs-pr-preview-test/docs/category/tutorial---basics', 'd32'),

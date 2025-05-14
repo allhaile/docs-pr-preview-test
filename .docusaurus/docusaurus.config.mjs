@@ -4,13 +4,13 @@
  * Modify the docusaurus.config.js file at your site's root instead.
  */
 export default {
-  "title": "My Site",
+  "title": "Haile Test Site",
   "tagline": "Dinosaurs are cool",
   "favicon": "img/favicon.ico",
   "url": "https://allhaile.github.io",
   "baseUrl": "/docs-pr-preview-test/",
-  "organizationName": "Slack",
-  "projectName": "docusaurus",
+  "organizationName": "allhaile",
+  "projectName": "docs-pr-preview-test",
   "onBrokenLinks": "throw",
   "onBrokenMarkdownLinks": "warn",
   "i18n": {

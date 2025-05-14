@@ -11,6 +11,11 @@
           "mainDocId": "intro",
           "docs": [
             {
+              "id": "apitester",
+              "path": "/docs-pr-preview-test/docs/apitester",
+              "sidebar": "tutorialSidebar"
+            },
+            {
               "id": "intro",
               "path": "/docs-pr-preview-test/docs/intro",
               "sidebar": "tutorialSidebar"
