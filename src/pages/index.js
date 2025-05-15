@@ -7,6 +7,7 @@ import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
 
+
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
@@ -20,7 +21,6 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to="/docs/apitester">
-            HELLO FROM PR PREVIEW BRANCH! 
             CHECKOUT THE API TESTER
           </Link>
         </div>
