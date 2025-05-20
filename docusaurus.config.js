@@ -7,7 +7,7 @@ const prNumber = process.env.PR_NUMBER;
 
 const dynamicBaseUrl = isPRPreview && prNumber
   ? `/docs-pr-preview-test/pr-preview/pr-${prNumber}/`
-  : '/';
+  : '/docs-pr-preview-test/';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
