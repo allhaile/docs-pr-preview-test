@@ -37,8 +37,10 @@ jobs:
         uses: rossjrw/pr-preview-action@v1.6.1
         with:
           source-dir: ./build
-          preview-branch: pr-preview
+          preview-branch: gh-pages
           umbrella-dir: pr-preview
+          pr-folder: pr-${{ github.event.pull_request.number }}
           action: auto
           token: ${{ secrets.GITHUB_TOKEN }}
-          comment: true 
+          comment: true
+          clean: false   
