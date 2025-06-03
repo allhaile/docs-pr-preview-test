@@ -20,7 +20,6 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to="/docs/apitester">
-            HELLO FROM PR PREVIEW BRANCH! 
             CHECKOUT THE API TESTER
           </Link>
         </div>
