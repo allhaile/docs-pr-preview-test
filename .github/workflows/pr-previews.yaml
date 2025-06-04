@@ -13,13 +13,15 @@ permissions:
   pull-requests: write
 
 jobs:
-  test:
-    name: Test deployment
+  preview:
+    name: Build and Deploy PR Preview
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
+
       - uses: actions/setup-node@v4
         with:
           node-version: 18
@@ -27,20 +29,75 @@ jobs:
           cache-dependency-path: package-lock.json
 
       - name: Install dependencies
-        run: npm install  
+        run: npm install
 
-      - name: Test build website
+      - name: Build site with PR preview baseUrl
         run: DOCS_PREVIEW=true PR_NUMBER=${{ github.event.pull_request.number }} NODE_OPTIONS="--max-old-space-size=4096" npm run build
 
-
-      - name: Deploy PR Preview
-        uses: rossjrw/pr-preview-action@v1.6.1
+      - name: Deploy PR Preview to gh-pages branch
+        uses: jamesives/github-pages-deploy-action@v6
         with:
-          source-dir: ./build
-          preview-branch: gh-pages
-          umbrella-dir: pr-preview
-          pr-folder: pr-${{ github.event.pull_request.number }}
-          action: auto
+          branch: gh-pages
+          folder: ./build
+          target-folder: pr-preview/pr-${{ github.event.pull_request.number }}
+          clean: false
+          commit-message: Deploy preview for PR ${{ github.event.pull_request.number }} 🚀
           token: ${{ secrets.GITHUB_TOKEN }}
-          comment: true
-          clean: false  
+
+      - name: Comment PR with preview URL
+        uses: marocchino/sticky-pull-request-comment@v2
+        if: github.event_name == 'pull_request'
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          header: pr-preview
+          message: |
+            🚀 Preview available at:  
+            https://allhaile.github.io/docs-pr-preview-test/pr-preview/pr-${{ github.event.pull_request.number }}/
+
+
+# name: PR Previews
+
+# on:
+#   pull_request:
+#     branches:
+#       - main
+#   workflow_dispatch:
+
+# permissions:
+#   contents: write
+#   pages: write
+#   id-token: write
+#   pull-requests: write
+
+# jobs:
+#   test:
+#     name: Test deployment
+#     runs-on: ubuntu-latest
+#     steps:
+#       - uses: actions/checkout@v4
+#         with:
+#           fetch-depth: 0
+#       - uses: actions/setup-node@v4
+#         with:
+#           node-version: 18
+#           cache: npm
+#           cache-dependency-path: package-lock.json
+
+#       - name: Install dependencies
+#         run: npm install  
+
+#       - name: Test build website
+#         run: DOCS_PREVIEW=true PR_NUMBER=${{ github.event.pull_request.number }} NODE_OPTIONS="--max-old-space-size=4096" npm run build
+
+
+#       - name: Deploy PR Preview
+#         uses: rossjrw/pr-preview-action@v1.6.1
+#         with:
+#           source-dir: ./build
+#           preview-branch: gh-pages
+#           umbrella-dir: pr-preview
+#           pr-folder: pr-${{ github.event.pull_request.number }}
+#           action: auto
+#           token: ${{ secrets.GITHUB_TOKEN }}
+#           comment: true
+#           clean: false  
