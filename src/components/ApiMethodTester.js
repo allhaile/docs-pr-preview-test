@@ -244,5 +244,4 @@ const ApiMethodTester = ({ selectedMethod: initialMethod }) => {
   );
 };
 
-
 export default ApiMethodTester;
