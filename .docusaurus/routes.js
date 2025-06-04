@@ -3,196 +3,161 @@ import ComponentCreator from '@docusaurus/ComponentCreator';
 
 export default [
   {
-    path: '/docs-pr-preview-test/__docusaurus/debug',
-    component: ComponentCreator('/docs-pr-preview-test/__docusaurus/debug', '464'),
+    path: '/docs-pr-preview-test/pr-preview/pr-8/blog',
+    component: ComponentCreator('/docs-pr-preview-test/pr-preview/pr-8/blog', '692'),
     exact: true
   },
   {
-    path: '/docs-pr-preview-test/__docusaurus/debug/config',
-    component: ComponentCreator('/docs-pr-preview-test/__docusaurus/debug/config', '8e1'),
+    path: '/docs-pr-preview-test/pr-preview/pr-8/blog/archive',
+    component: ComponentCreator('/docs-pr-preview-test/pr-preview/pr-8/blog/archive', 'f0a'),
     exact: true
   },
   {
-    path: '/docs-pr-preview-test/__docusaurus/debug/content',
-    component: ComponentCreator('/docs-pr-preview-test/__docusaurus/debug/content', 'a7e'),
+    path: '/docs-pr-preview-test/pr-preview/pr-8/blog/authors',
+    component: ComponentCreator('/docs-pr-preview-test/pr-preview/pr-8/blog/authors', '320'),
     exact: true
   },
   {
-    path: '/docs-pr-preview-test/__docusaurus/debug/globalData',
-    component: ComponentCreator('/docs-pr-preview-test/__docusaurus/debug/globalData', 'eb7'),
+    path: '/docs-pr-preview-test/pr-preview/pr-8/blog/authors/all-sebastien-lorber-articles',
+    component: ComponentCreator('/docs-pr-preview-test/pr-preview/pr-8/blog/authors/all-sebastien-lorber-articles', '186'),
     exact: true
   },
   {
-    path: '/docs-pr-preview-test/__docusaurus/debug/metadata',
-    component: ComponentCreator('/docs-pr-preview-test/__docusaurus/debug/metadata', 'e34'),
+    path: '/docs-pr-preview-test/pr-preview/pr-8/blog/authors/yangshun',
+    component: ComponentCreator('/docs-pr-preview-test/pr-preview/pr-8/blog/authors/yangshun', '84c'),
     exact: true
   },
   {
-    path: '/docs-pr-preview-test/__docusaurus/debug/registry',
-    component: ComponentCreator('/docs-pr-preview-test/__docusaurus/debug/registry', '0ef'),
+    path: '/docs-pr-preview-test/pr-preview/pr-8/blog/first-blog-post',
+    component: ComponentCreator('/docs-pr-preview-test/pr-preview/pr-8/blog/first-blog-post', '10a'),
     exact: true
   },
   {
-    path: '/docs-pr-preview-test/__docusaurus/debug/routes',
-    component: ComponentCreator('/docs-pr-preview-test/__docusaurus/debug/routes', '625'),
+    path: '/docs-pr-preview-test/pr-preview/pr-8/blog/long-blog-post',
+    component: ComponentCreator('/docs-pr-preview-test/pr-preview/pr-8/blog/long-blog-post', 'e27'),
     exact: true
   },
   {
-    path: '/docs-pr-preview-test/blog',
-    component: ComponentCreator('/docs-pr-preview-test/blog', '9e6'),
+    path: '/docs-pr-preview-test/pr-preview/pr-8/blog/mdx-blog-post',
+    component: ComponentCreator('/docs-pr-preview-test/pr-preview/pr-8/blog/mdx-blog-post', 'abd'),
     exact: true
   },
   {
-    path: '/docs-pr-preview-test/blog/archive',
-    component: ComponentCreator('/docs-pr-preview-test/blog/archive', 'a23'),
+    path: '/docs-pr-preview-test/pr-preview/pr-8/blog/tags',
+    component: ComponentCreator('/docs-pr-preview-test/pr-preview/pr-8/blog/tags', '158'),
     exact: true
   },
   {
-    path: '/docs-pr-preview-test/blog/authors',
-    component: ComponentCreator('/docs-pr-preview-test/blog/authors', 'af6'),
+    path: '/docs-pr-preview-test/pr-preview/pr-8/blog/tags/docusaurus',
+    component: ComponentCreator('/docs-pr-preview-test/pr-preview/pr-8/blog/tags/docusaurus', '9d2'),
     exact: true
   },
   {
-    path: '/docs-pr-preview-test/blog/authors/all-sebastien-lorber-articles',
-    component: ComponentCreator('/docs-pr-preview-test/blog/authors/all-sebastien-lorber-articles', 'f9a'),
+    path: '/docs-pr-preview-test/pr-preview/pr-8/blog/tags/facebook',
+    component: ComponentCreator('/docs-pr-preview-test/pr-preview/pr-8/blog/tags/facebook', '5cd'),
     exact: true
   },
   {
-    path: '/docs-pr-preview-test/blog/authors/yangshun',
-    component: ComponentCreator('/docs-pr-preview-test/blog/authors/yangshun', 'e31'),
+    path: '/docs-pr-preview-test/pr-preview/pr-8/blog/tags/hello',
+    component: ComponentCreator('/docs-pr-preview-test/pr-preview/pr-8/blog/tags/hello', '949'),
     exact: true
   },
   {
-    path: '/docs-pr-preview-test/blog/first-blog-post',
-    component: ComponentCreator('/docs-pr-preview-test/blog/first-blog-post', 'ec9'),
+    path: '/docs-pr-preview-test/pr-preview/pr-8/blog/tags/hola',
+    component: ComponentCreator('/docs-pr-preview-test/pr-preview/pr-8/blog/tags/hola', '180'),
     exact: true
   },
   {
-    path: '/docs-pr-preview-test/blog/long-blog-post',
-    component: ComponentCreator('/docs-pr-preview-test/blog/long-blog-post', '458'),
+    path: '/docs-pr-preview-test/pr-preview/pr-8/blog/welcome',
+    component: ComponentCreator('/docs-pr-preview-test/pr-preview/pr-8/blog/welcome', 'a93'),
     exact: true
   },
   {
-    path: '/docs-pr-preview-test/blog/mdx-blog-post',
-    component: ComponentCreator('/docs-pr-preview-test/blog/mdx-blog-post', '4f4'),
+    path: '/docs-pr-preview-test/pr-preview/pr-8/markdown-page',
+    component: ComponentCreator('/docs-pr-preview-test/pr-preview/pr-8/markdown-page', '990'),
     exact: true
   },
   {
-    path: '/docs-pr-preview-test/blog/tags',
-    component: ComponentCreator('/docs-pr-preview-test/blog/tags', 'b8f'),
-    exact: true
-  },
-  {
-    path: '/docs-pr-preview-test/blog/tags/docusaurus',
-    component: ComponentCreator('/docs-pr-preview-test/blog/tags/docusaurus', 'ee5'),
-    exact: true
-  },
-  {
-    path: '/docs-pr-preview-test/blog/tags/facebook',
-    component: ComponentCreator('/docs-pr-preview-test/blog/tags/facebook', 'ade'),
-    exact: true
-  },
-  {
-    path: '/docs-pr-preview-test/blog/tags/hello',
-    component: ComponentCreator('/docs-pr-preview-test/blog/tags/hello', '723'),
-    exact: true
-  },
-  {
-    path: '/docs-pr-preview-test/blog/tags/hola',
-    component: ComponentCreator('/docs-pr-preview-test/blog/tags/hola', '640'),
-    exact: true
-  },
-  {
-    path: '/docs-pr-preview-test/blog/welcome',
-    component: ComponentCreator('/docs-pr-preview-test/blog/welcome', '944'),
-    exact: true
-  },
-  {
-    path: '/docs-pr-preview-test/markdown-page',
-    component: ComponentCreator('/docs-pr-preview-test/markdown-page', 'be1'),
-    exact: true
-  },
-  {
-    path: '/docs-pr-preview-test/docs',
-    component: ComponentCreator('/docs-pr-preview-test/docs', '6db'),
+    path: '/docs-pr-preview-test/pr-preview/pr-8/docs',
+    component: ComponentCreator('/docs-pr-preview-test/pr-preview/pr-8/docs', 'e67'),
     routes: [
       {
-        path: '/docs-pr-preview-test/docs',
-        component: ComponentCreator('/docs-pr-preview-test/docs', '01c'),
+        path: '/docs-pr-preview-test/pr-preview/pr-8/docs',
+        component: ComponentCreator('/docs-pr-preview-test/pr-preview/pr-8/docs', '4ce'),
         routes: [
           {
-            path: '/docs-pr-preview-test/docs',
-            component: ComponentCreator('/docs-pr-preview-test/docs', '940'),
+            path: '/docs-pr-preview-test/pr-preview/pr-8/docs',
+            component: ComponentCreator('/docs-pr-preview-test/pr-preview/pr-8/docs', '0ca'),
             routes: [
               {
-                path: '/docs-pr-preview-test/docs/apitester',
-                component: ComponentCreator('/docs-pr-preview-test/docs/apitester', '692'),
+                path: '/docs-pr-preview-test/pr-preview/pr-8/docs/apitester',
+                component: ComponentCreator('/docs-pr-preview-test/pr-preview/pr-8/docs/apitester', '7a5'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs-pr-preview-test/docs/category/tutorial---basics',
-                component: ComponentCreator('/docs-pr-preview-test/docs/category/tutorial---basics', 'd32'),
+                path: '/docs-pr-preview-test/pr-preview/pr-8/docs/category/tutorial---basics',
+                component: ComponentCreator('/docs-pr-preview-test/pr-preview/pr-8/docs/category/tutorial---basics', 'fc2'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs-pr-preview-test/docs/category/tutorial---extras',
-                component: ComponentCreator('/docs-pr-preview-test/docs/category/tutorial---extras', '567'),
+                path: '/docs-pr-preview-test/pr-preview/pr-8/docs/category/tutorial---extras',
+                component: ComponentCreator('/docs-pr-preview-test/pr-preview/pr-8/docs/category/tutorial---extras', '299'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs-pr-preview-test/docs/intro',
-                component: ComponentCreator('/docs-pr-preview-test/docs/intro', '3f5'),
+                path: '/docs-pr-preview-test/pr-preview/pr-8/docs/intro',
+                component: ComponentCreator('/docs-pr-preview-test/pr-preview/pr-8/docs/intro', 'f13'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs-pr-preview-test/docs/tutorial-basics/congratulations',
-                component: ComponentCreator('/docs-pr-preview-test/docs/tutorial-basics/congratulations', '421'),
+                path: '/docs-pr-preview-test/pr-preview/pr-8/docs/tutorial-basics/congratulations',
+                component: ComponentCreator('/docs-pr-preview-test/pr-preview/pr-8/docs/tutorial-basics/congratulations', '232'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs-pr-preview-test/docs/tutorial-basics/create-a-blog-post',
-                component: ComponentCreator('/docs-pr-preview-test/docs/tutorial-basics/create-a-blog-post', 'f2c'),
+                path: '/docs-pr-preview-test/pr-preview/pr-8/docs/tutorial-basics/create-a-blog-post',
+                component: ComponentCreator('/docs-pr-preview-test/pr-preview/pr-8/docs/tutorial-basics/create-a-blog-post', 'd48'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs-pr-preview-test/docs/tutorial-basics/create-a-document',
-                component: ComponentCreator('/docs-pr-preview-test/docs/tutorial-basics/create-a-document', '85b'),
+                path: '/docs-pr-preview-test/pr-preview/pr-8/docs/tutorial-basics/create-a-document',
+                component: ComponentCreator('/docs-pr-preview-test/pr-preview/pr-8/docs/tutorial-basics/create-a-document', 'f7e'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs-pr-preview-test/docs/tutorial-basics/create-a-page',
-                component: ComponentCreator('/docs-pr-preview-test/docs/tutorial-basics/create-a-page', '86c'),
+                path: '/docs-pr-preview-test/pr-preview/pr-8/docs/tutorial-basics/create-a-page',
+                component: ComponentCreator('/docs-pr-preview-test/pr-preview/pr-8/docs/tutorial-basics/create-a-page', 'a05'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs-pr-preview-test/docs/tutorial-basics/deploy-your-site',
-                component: ComponentCreator('/docs-pr-preview-test/docs/tutorial-basics/deploy-your-site', '3c1'),
+                path: '/docs-pr-preview-test/pr-preview/pr-8/docs/tutorial-basics/deploy-your-site',
+                component: ComponentCreator('/docs-pr-preview-test/pr-preview/pr-8/docs/tutorial-basics/deploy-your-site', '211'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs-pr-preview-test/docs/tutorial-basics/markdown-features',
-                component: ComponentCreator('/docs-pr-preview-test/docs/tutorial-basics/markdown-features', '6bd'),
+                path: '/docs-pr-preview-test/pr-preview/pr-8/docs/tutorial-basics/markdown-features',
+                component: ComponentCreator('/docs-pr-preview-test/pr-preview/pr-8/docs/tutorial-basics/markdown-features', '2e5'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs-pr-preview-test/docs/tutorial-extras/manage-docs-versions',
-                component: ComponentCreator('/docs-pr-preview-test/docs/tutorial-extras/manage-docs-versions', 'd3f'),
+                path: '/docs-pr-preview-test/pr-preview/pr-8/docs/tutorial-extras/manage-docs-versions',
+                component: ComponentCreator('/docs-pr-preview-test/pr-preview/pr-8/docs/tutorial-extras/manage-docs-versions', '922'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
               {
-                path: '/docs-pr-preview-test/docs/tutorial-extras/translate-your-site',
-                component: ComponentCreator('/docs-pr-preview-test/docs/tutorial-extras/translate-your-site', 'c9d'),
+                path: '/docs-pr-preview-test/pr-preview/pr-8/docs/tutorial-extras/translate-your-site',
+                component: ComponentCreator('/docs-pr-preview-test/pr-preview/pr-8/docs/tutorial-extras/translate-your-site', '0dc'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               }
@@ -203,8 +168,8 @@ export default [
     ]
   },
   {
-    path: '/docs-pr-preview-test/',
-    component: ComponentCreator('/docs-pr-preview-test/', '9ab'),
+    path: '/docs-pr-preview-test/pr-preview/pr-8/',
+    component: ComponentCreator('/docs-pr-preview-test/pr-preview/pr-8/', '182'),
     exact: true
   },
   {

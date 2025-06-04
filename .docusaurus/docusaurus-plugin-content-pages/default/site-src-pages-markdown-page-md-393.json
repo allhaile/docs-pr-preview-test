@@ -1,6 +1,6 @@
 {
   "type": "mdx",
-  "permalink": "/docs-pr-preview-test/markdown-page",
+  "permalink": "/docs-pr-preview-test/pr-preview/pr-8/markdown-page",
   "source": "@site/src/pages/markdown-page.md",
   "title": "Markdown page example",
   "description": "You don't need React to write simple standalone pages.",

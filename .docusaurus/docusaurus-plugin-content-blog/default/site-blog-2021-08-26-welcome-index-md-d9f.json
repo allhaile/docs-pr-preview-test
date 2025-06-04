@@ -1,5 +1,5 @@
 {
-  "permalink": "/docs-pr-preview-test/blog/welcome",
+  "permalink": "/docs-pr-preview-test/pr-preview/pr-8/blog/welcome",
   "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/blog/2021-08-26-welcome/index.md",
   "source": "@site/blog/2021-08-26-welcome/index.md",
   "title": "Welcome",
@@ -9,19 +9,19 @@
     {
       "inline": false,
       "label": "Facebook",
-      "permalink": "/docs-pr-preview-test/blog/tags/facebook",
+      "permalink": "/docs-pr-preview-test/pr-preview/pr-8/blog/tags/facebook",
       "description": "Facebook tag description"
     },
     {
       "inline": false,
       "label": "Hello",
-      "permalink": "/docs-pr-preview-test/blog/tags/hello",
+      "permalink": "/docs-pr-preview-test/pr-preview/pr-8/blog/tags/hello",
       "description": "Hello tag description"
     },
     {
       "inline": false,
       "label": "Docusaurus",
-      "permalink": "/docs-pr-preview-test/blog/tags/docusaurus",
+      "permalink": "/docs-pr-preview-test/pr-preview/pr-8/blog/tags/docusaurus",
       "description": "Docusaurus tag description"
     }
   ],
@@ -33,7 +33,7 @@
       "title": "Docusaurus maintainer",
       "url": "https://sebastienlorber.com",
       "page": {
-        "permalink": "/docs-pr-preview-test/blog/authors/all-sebastien-lorber-articles"
+        "permalink": "/docs-pr-preview-test/pr-preview/pr-8/blog/authors/all-sebastien-lorber-articles"
       },
       "socials": {
         "x": "https://x.com/sebastienlorber",
@@ -49,7 +49,7 @@
       "title": "Front End Engineer @ Facebook",
       "url": "https://github.com/yangshun",
       "page": {
-        "permalink": "/docs-pr-preview-test/blog/authors/yangshun"
+        "permalink": "/docs-pr-preview-test/pr-preview/pr-8/blog/authors/yangshun"
       },
       "socials": {
         "x": "https://x.com/yangshunz",
@@ -75,6 +75,6 @@
   "unlisted": false,
   "nextItem": {
     "title": "MDX Blog Post",
-    "permalink": "/docs-pr-preview-test/blog/mdx-blog-post"
+    "permalink": "/docs-pr-preview-test/pr-preview/pr-8/blog/mdx-blog-post"
   }
 }

@@ -1,11 +1,11 @@
 name: PushPreview
 
-  on:
+on:
     pull_request_target:
       types:
         - labeled
   
-  jobs:
+jobs:
     preview:
       runs-on: ubuntu-latest
       if: github.event.label.name == 'preview'

@@ -8,7 +8,7 @@ export default {
   "tagline": "Dinosaurs are cool",
   "favicon": "img/favicon.ico",
   "url": "https://allhaile.github.io",
-  "baseUrl": "/docs-pr-preview-test/",
+  "baseUrl": "/docs-pr-preview-test/pr-preview/pr-8/",
   "organizationName": "allhaile",
   "projectName": "docs-pr-preview-test",
   "onBrokenLinks": "throw",
