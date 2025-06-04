@@ -19,7 +19,7 @@ jobs:
           run: |
             gh pr comment ${{ github.event.pull_request.number }} --repo ${{ github.repository }} --body "⚙️ Hang tight! PushPreview is currently building your preview. We'll share the URL as soon as it's ready."
           env:
-            GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+            GH_TOKEN: ${{ secrets.PAT_TOKEN }}
   
         - uses: actions/setup-node@v3
           with:
@@ -34,14 +34,12 @@ jobs:
             PR_NUMBER: ${{ github.event.number }}
             BASE_URL: /github/${{ github.repository }}/${{ github.event.number }}/
           run: |
-            cd docs
-            yarn install --frozen-lockfile
-            yarn build
+              NODE_OPTIONS="--max-old-space-size=4096" npm run build
 
   
         - name: Generate preview
           uses: PushLabsHQ/pushpreview-action@1.0.6
           with:
-            source-directory: ./docs/build
-            github-token: ${{ secrets.GITHUB_TOKEN }}
+            source-directory: ./build
+            github-token: ${{ secrets.PAT_TOKEN }}
             pushpreview-token: ${{ secrets.PUSHPREVIEW_TOKEN }}    
