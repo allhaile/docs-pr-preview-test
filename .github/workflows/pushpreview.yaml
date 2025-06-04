@@ -1,0 +1,43 @@
+name: PushPreview
+
+  on:
+    pull_request_target:
+      types:
+        - labeled
+  
+  jobs:
+    preview:
+      runs-on: ubuntu-latest
+      if: github.event.label.name == 'preview'
+      steps:
+        - uses: actions/checkout@v3
+        - name: Comment
+          run: |
+            gh pr comment ${{ github.event.pull_request.number }} --repo ${{ github.repository }} --body "⚙️ Hang tight! PushPreview is currently building your preview. We'll share the URL as soon as it's ready."
+          env:
+            GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  
+        - uses: actions/setup-node@v3
+          with:
+            node-version: 18
+  
+        - name: Set BASE_URL
+          run: echo "BASE_URL=/github/${{ github.repository }}/${{ github.event.number }}/" >> $GITHUB_ENV
+  
+        - name: Build site
+          env:
+            DOCS_PREVIEW: true
+            PR_NUMBER: ${{ github.event.number }}
+            BASE_URL: /github/${{ github.repository }}/${{ github.event.number }}/
+          run: |
+            cd docs
+            yarn install --frozen-lockfile
+            yarn build
+
+  
+        - name: Generate preview
+          uses: PushLabsHQ/pushpreview-action@1.0.6
+          with:
+            source-directory: ./docs/build
+            github-token: ${{ secrets.GITHUB_TOKEN }}
+            pushpreview-token: ${{ secrets.PUSHPREVIEW_TOKEN }}    
