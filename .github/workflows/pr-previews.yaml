@@ -35,7 +35,7 @@ jobs:
         run: DOCS_PREVIEW=true PR_NUMBER=${{ github.event.pull_request.number }} NODE_OPTIONS="--max-old-space-size=4096" npm run build
 
       - name: Deploy PR Preview to gh-pages branch
-        uses: jamesives/github-pages-deploy-action@v6
+        uses: jamesives/github-pages-deploy-action@v4
         with:
           branch: gh-pages
           folder: ./build
