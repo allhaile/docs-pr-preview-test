@@ -1,11 +1,7 @@
 name: PushPreview
 
 on:
-<<<<<<< HEAD
-    pull_request_target:
-=======
     pull_request:
->>>>>>> 713fac96fa2fd33c6719a6488a1432fdec93d6c5
       types:
         - labeled
   
