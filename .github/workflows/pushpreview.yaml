@@ -36,6 +36,6 @@ jobs:
         - name: Generate preview
           uses: PushLabsHQ/pushpreview-action@1.0.6
           with:
-            source-directory: ./docs/build
+            source-directory: ./build
             github-token: ${{ secrets.PAT_TOKEN }}
             pushpreview-token: ${{ secrets.PUSHPREVIEW_TOKEN }}    
